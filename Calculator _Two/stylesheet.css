@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e3f9e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+}
+.calculator form input{
+    border:0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px  rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0,0,0,0.2);
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow:none;
+}
+
+form input.equal{
+    width: 145px;
+}
+
+
+form input.mark{
+    box-shadow: none;
+    color: lightgray;
+    cursor:context-menu;
+    opacity: 0.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.5;
+    
+    border: none;
+    background: none;
+    padding: 0;
+ 
+ 
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+    
+}
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #252022, 0 0 40px #3a4452, 0 0 50px #3a4452, 0 0 60px #3a4452, 0 0 70px #3a4452;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #3a4452, 0 0 40px #2d908e, 0 0 50px #fff, 0 0 60px #3a4452, 0 0 70px #3a4452, 0 0 80px #fff;
+    }
+  }
+
+form input.operator{
+    color: #33ffd8;
+  
+    
+    
+
+}
+form input.operator{
+    
+    border: none;
+    color:whitesmoke;
+   
+    
+    
+    opacity: 0.5;
+    transition: 0.7s;
+}
+
+form input.operator:hover {opacity: 4;}
+form input.mark:hover{opacity: 0.5;}
